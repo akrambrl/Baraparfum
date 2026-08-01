@@ -20,6 +20,14 @@
     });
   }
 
+  /* ── Header compact au scroll ────────────────────────── */
+  var head = document.querySelector(".site-head");
+  if (head) {
+    window.addEventListener("scroll", function () {
+      head.classList.toggle("scrolled", window.scrollY > 12);
+    }, { passive: true });
+  }
+
   /* ── Apparition au scroll ────────────────────────────── */
   var risers = document.querySelectorAll(".rise");
   if ("IntersectionObserver" in window) {
