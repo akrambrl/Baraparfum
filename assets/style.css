@@ -268,6 +268,21 @@ img{max-width:100%}
   font-size:14px;color:rgba(247,241,230,.5);
 }
 
+/* Hero photo (accueil) */
+.hero--photo{position:relative;color:var(--paper);border-bottom:0}
+.hero--photo .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero--photo::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(16,12,5,.82) 0%,rgba(16,12,5,.55) 55%,rgba(16,12,5,.28) 100%);
+}
+.hero--photo .hero-in{
+  position:relative;z-index:1;grid-template-columns:1fr;
+  min-height:min(76vh,700px);align-content:center;padding:110px 24px 100px;
+}
+.hero--photo .lede{color:rgba(247,241,230,.88)}
+.hero--photo .eyebrow{color:var(--accent-2)}
+.hero--photo .btn--ghost:hover{background:rgba(247,241,230,.12)}
+
 /* Photos */
 .photo-band{height:clamp(300px,44vw,540px);overflow:hidden;border-bottom:1px solid var(--line)}
 .photo-band img{width:100%;height:100%;object-fit:cover;display:block}
