@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demander un devis · Bar à parfum Paris | Bar à Parfum</title>
+<meta name="description" content="Demandez votre devis pour un bar à parfum en Île-de-France : mariage, entreprise, hôtel. Réponse chiffrée sous 24 h ouvrées.">
+<meta property="og:title" content="Demander un devis · Bar à parfum Paris | Bar à Parfum">
+<meta property="og:description" content="Demandez votre devis pour un bar à parfum en Île-de-France : mariage, entreprise, hôtel. Réponse chiffrée sous 24 h ouvrées.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="head-in">
+    <a class="logo" href="index.html">
+      <b>Bar à Parfum</b>
+      <span>par Emmanuelle Jane · maison de parfum</span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="mariage.html">Mariage</a>
+      <a href="entreprise.html">Entreprise</a>
+      <a href="hotellerie.html">Hôtels</a>
+      <a href="collection.html">La collection</a>
+      <a href="prestataires.html">Prestataires</a>
+      <a class="btn" href="devis.html">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="eyebrow">Devis · réponse sous 24 h ouvrées</p>
+      <h1>Dites-nous<br>votre date</h1>
+      <p class="lede">Quatre informations suffisent : la date, le lieu, le nombre d'invités et ce que
+      vous voulez. On chiffre et on vous dit tout de suite si la date est libre.</p>
+    </div>
+    <div class="fan" aria-hidden="true">
+      <div class="strip" style="--rot:-5deg"><span>Date</span></div>
+      <div class="strip" style="--rot:4deg"><span>Lieu</span></div>
+      <div class="strip" style="--rot:-3deg"><span>Invités</span></div>
+      <div class="strip" style="--rot:6deg"><span>Formule</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--pale">
+  <div class="wrap">
+    <form class="form rise" id="form-devis" data-origine="client">
+      <div class="field">
+        <label for="nom">Nom et prénom</label>
+        <input id="nom" name="nom" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="telephone" type="tel">
+      </div>
+      <div class="field">
+        <label for="type">Type d'événement</label>
+        <select id="type" name="type_evenement">
+          <option>Mariage</option>
+          <option>Événement d'entreprise</option>
+          <option>Séminaire</option>
+          <option>Salon / stand</option>
+          <option>Hôtel — welcome gift</option>
+          <option>Anniversaire, baptême, autre</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="date">Date de l'événement</label>
+        <input id="date" name="date_evenement" type="date" required>
+      </div>
+      <div class="field">
+        <label for="lieu">Lieu (ville ou nom du domaine)</label>
+        <input id="lieu" name="lieu" required>
+      </div>
+      <div class="field">
+        <label for="invites">Nombre d'invités</label>
+        <select id="invites" name="invites">
+          <option>Moins de 50</option>
+          <option>50 à 100</option>
+          <option>100 à 150</option>
+          <option>150 à 250</option>
+          <option>Plus de 250</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="formule">Formule envisagée</label>
+        <select id="formule" name="formule">
+          <option>Signature — bar animé + flacons</option>
+          <option>Essentiel — flacons livrés, sans animation</option>
+          <option>Prestige — parfum créé pour vous</option>
+          <option>Je ne sais pas encore, conseillez-moi</option>
+        </select>
+      </div>
+      <div class="field field--full">
+        <label for="message">Votre projet en quelques lignes</label>
+        <textarea id="message" name="message" placeholder="Le déroulé de la journée, vos couleurs, une contrainte de lieu, un budget cadre…"></textarea>
+      </div>
+      <p class="status" role="status" aria-live="polite"></p>
+      <div class="form-foot">
+        <button class="btn btn--ink" type="submit">Demander un devis</button>
+        <p class="form-note">Réponse chiffrée sous 24 h ouvrées. Aucun engagement, aucun acompte
+        avant validation de la maquette.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sec sec--paper">
+  <div class="wrap">
+    <div class="grid grid--3 rise">
+      <div class="cell">
+        <h3>Vous préférez appeler ?</h3>
+        <p><a class="txtlink" href="tel:+33100000000">01 00 00 00 00</a></p>
+        <p style="font-size:15px;margin-top:14px">Du lundi au vendredi, 9 h – 19 h.</p>
+      </div>
+      <div class="cell">
+        <h3>Par email</h3>
+        <p><a class="txtlink" href="mailto:contact@baraparfum-event.fr">contact@baraparfum-event.fr</a></p>
+        <p style="font-size:15px;margin-top:14px">Précisez la date, on vous dit sous 24 h si elle est libre.</p>
+      </div>
+      <div class="cell">
+        <h3>Vous êtes prestataire ?</h3>
+        <p>Passez par le formulaire dédié : la grille et les conditions ne sont pas les mêmes.</p>
+        <p><a class="txtlink" href="prestataires.html">Espace prestataires</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-mark">Bar à Parfum</p>
+        <p style="font-size:15px">Le bar à parfum qui se déplace. Paris et Île-de-France, France entière sur devis.</p>
+        <p style="font-size:15px;margin:0">par <strong>Emmanuelle Jane</strong>, maison de parfum.<br>
+        Parfums formulés et notifiés au CPNP.</p>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="mariage.html">Mariage</a></li>
+          <li><a href="entreprise.html">Entreprise &amp; séminaire</a></li>
+          <li><a href="hotellerie.html">Hôtellerie</a></li>
+          <li><a href="collection.html">La collection</a></li>
+          <li><a href="prestataires.html">Espace prestataires</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@baraparfum-event.fr">contact@baraparfum-event.fr</a></li>
+          <li><a href="tel:+33100000000">01 00 00 00 00</a></li>
+          <li><a href="https://instagram.com/baraparfum.event" rel="noopener">@baraparfum.event</a></li>
+          <li><a href="devis.html">Demander un devis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>© 2026 Bar à Parfum · Emmanuelle Jane</span>
+      <span><a href="mentions.html">Mentions légales &amp; CGV</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
