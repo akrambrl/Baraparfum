@@ -31,7 +31,8 @@ body{
 }
 h1,h2,h3,h4,.foot-mark{font-family:var(--font-display);font-weight:400;line-height:1.12;letter-spacing:.02em}
 h1{font-size:clamp(38px,5.4vw,68px)}
-h1 i{font-family:var(--font-italic);font-style:italic;font-weight:500;color:var(--accent-2);letter-spacing:0}
+h1 i,h2 i{font-family:var(--font-italic);font-style:italic;font-weight:500;color:var(--accent);letter-spacing:0}
+h1 i{color:var(--accent-2)}
 h2{font-size:clamp(28px,3.6vw,44px);margin-bottom:20px}
 h3{font-size:21px;margin-bottom:12px}
 p{margin-bottom:14px}
@@ -287,6 +288,36 @@ img{max-width:100%}
   background:var(--accent-2);margin:26px auto 0;
 }
 .cta-band .lede{color:rgba(244,239,230,.66);max-width:52ch;margin:0 auto 36px}
+
+/* Mise en avant produit */
+.feature{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.feature--flip{grid-template-columns:1.1fr 1fr}
+.feature-img{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.feature-img img{display:block;width:100%;height:auto}
+.feature ul{list-style:none;margin:22px 0 26px}
+.feature li{
+  padding:11px 0 11px 24px;position:relative;font-size:16px;color:var(--ink-2);
+  border-bottom:1px solid var(--line);
+}
+.feature li::before{content:"·";position:absolute;left:2px;color:var(--accent);font-size:22px;top:5px}
+@media (max-width:860px){
+  .feature,.feature--flip{grid-template-columns:1fr;gap:36px}
+}
+
+/* Bandeau pro discret */
+.probar{background:var(--pale);border-top:1px solid var(--line);padding:26px 0}
+.probar-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;flex-wrap:wrap;
+}
+.probar span{font-size:14px;color:var(--ink-2)}
+.probar nav{display:flex;gap:26px;flex-wrap:wrap}
+.probar a{
+  text-decoration:none;font-size:11.5px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);
+  white-space:nowrap;
+}
+.probar a:hover{color:var(--ink)}
 
 /* ── Footer ──────────────────────────────────────────────── */
 .site-foot{background:#0c0a06;color:rgba(244,239,230,.72);padding:84px 0 38px}
