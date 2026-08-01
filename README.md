@@ -29,6 +29,13 @@ Il suffit d'ouvrir `index.html` ou de servir le dossier tel quel
   Pour un vrai envoi serveur, brancher un service type Formspree/Basin dans
   `assets/main.js` (handler du formulaire `#form-devis`).
 
+## Visuels
+
+Les photos de `assets/img/` sont des visuels libres de droit issus d'Unsplash
+(licence Unsplash : usage commercial autorisé, sans attribution obligatoire).
+Remplacez-les par vos vraies photos du bar (mêmes noms de fichiers) quand vous
+les avez sous la main — format JPEG, ~1600 px de large recommandé.
+
 ## Structure
 
 ```

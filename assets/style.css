@@ -268,6 +268,13 @@ img{max-width:100%}
   font-size:14px;color:rgba(247,241,230,.5);
 }
 
+/* Photos */
+.photo-band{height:clamp(300px,44vw,540px);overflow:hidden;border-bottom:1px solid var(--line)}
+.photo-band img{width:100%;height:100%;object-fit:cover;display:block}
+.cell-photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;margin-bottom:20px}
+.cell-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.cell:hover .cell-photo img{transform:scale(1.04)}
+
 /* Page mentions légales */
 .legal{max-width:760px}
 .legal h2{font-size:clamp(24px,3vw,32px);margin:44px 0 14px}
