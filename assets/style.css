@@ -127,16 +127,18 @@ img{max-width:100%}
 
 /* Hero photo (accueil) */
 .hero--photo{position:relative;color:var(--paper);border-bottom:0}
-.hero--photo .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero--photo .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 34%}
 .hero--photo::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(10,8,4,.86) 0%,rgba(10,8,4,.55) 55%,rgba(10,8,4,.3) 100%);
+  background:linear-gradient(180deg,rgba(10,8,4,.22) 0%,rgba(10,8,4,.06) 30%,rgba(10,8,4,.5) 62%,rgba(10,8,4,.94) 100%);
 }
 .hero--photo .hero-in{
   position:relative;z-index:1;grid-template-columns:1fr;
-  min-height:min(82vh,760px);align-content:center;padding:130px 28px 120px;
+  min-height:min(88vh,820px);align-content:end;padding:140px 28px 68px;
 }
-.hero--photo h1{font-size:clamp(44px,6.2vw,84px)}
+.hero--photo h1{font-size:clamp(38px,4.8vw,64px);text-shadow:0 2px 26px rgba(10,8,4,.6)}
+.hero--photo .eyebrow,.hero--photo .lede{text-shadow:0 1px 16px rgba(10,8,4,.65)}
+.hero--photo .lede{max-width:52ch}
 .hero--photo .lede{color:rgba(244,239,230,.85)}
 .hero--photo .eyebrow{color:var(--accent-2)}
 .hero--photo .eyebrow::before{
@@ -421,8 +423,8 @@ img{max-width:100%}
 /* ── Entrée du héros ─────────────────────────────────────── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes kenburns{from{scale:1.09}to{scale:1}}
-@keyframes derive{from{scale:1}to{scale:1.06}}
+@keyframes kenburns{from{scale:1.04}to{scale:1}}
+@keyframes derive{from{scale:1}to{scale:1.025}}
 .hero-in>div:first-child .eyebrow{animation:fadeUp .9s cubic-bezier(.22,.61,.36,1) .1s both}
 .hero-in>div:first-child h1{animation:fadeUp 1s cubic-bezier(.22,.61,.36,1) .25s both}
 .hero-in>div:first-child .lede{animation:fadeUp 1s cubic-bezier(.22,.61,.36,1) .45s both}
