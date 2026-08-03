@@ -51,7 +51,7 @@
      Pas de backend : la demande part par email pré-rempli.
      Remplacez EMAIL par votre adresse, ou branchez un service
      type Formspree en remplaçant le handler ci-dessous.     */
-  var EMAIL = "contact@baraparfum-event.fr";
+  var EMAIL = "contact@bara-parfums.fr";
 
   var form = document.getElementById("form-devis");
   if (form) {
