@@ -48,10 +48,8 @@
   }
 
   /* ── Formulaires devis / prestataires ─────────────────
-     Pas de backend : la demande part par email pré-rempli.
-     Remplacez EMAIL par votre adresse, ou branchez un service
-     type Formspree en remplaçant le handler ci-dessous.     */
-  var EMAIL = "contact@bara-parfums.fr";
+     Pas de backend : la demande part par WhatsApp pré-rempli. */
+  var WHATSAPP = "33785042207";
 
   var form = document.getElementById("form-devis");
   if (form) {
@@ -67,26 +65,23 @@
         }
       });
 
-      var subject =
+      var intro =
         origine === "prestataire"
-          ? "Ouverture de compte revendeur — Bar à Parfum"
-          : "Demande de devis — Bar à Parfum";
-      var body =
-        "Bonjour,\n\nVoici ma demande :\n\n" +
-        lines.join("\n") +
-        "\n\nMerci !";
+          ? "Bonjour, je souhaite ouvrir un compte revendeur :"
+          : "Bonjour, je souhaite un devis pour le bar à parfum :";
+      var body = intro + "\n\n" + lines.join("\n");
 
       var status = form.querySelector(".status");
       if (status) {
         status.textContent =
-          "✦ Votre messagerie va s'ouvrir avec la demande pré-remplie. " +
-          "Si rien ne se passe, écrivez-nous à " + EMAIL + ".";
+          "✦ WhatsApp va s'ouvrir avec votre demande pré-remplie — " +
+          "il ne reste qu'à appuyer sur Envoyer.";
       }
 
-      window.location.href =
-        "mailto:" + EMAIL +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
+      window.open(
+        "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(body),
+        "_blank"
+      );
     });
   }
 })();
