@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /mentions.html
+
+Sitemap: https://bara-parfums.fr/sitemap.xml
