@@ -372,6 +372,20 @@ img{max-width:100%}
 .legal p,.legal li{color:var(--ink-2);font-size:16px}
 .legal ul{padding-left:22px;margin-bottom:14px}
 
+/* ── Bouton WhatsApp flottant ────────────────────────────── */
+.wa-fab{
+  position:fixed;right:26px;bottom:26px;z-index:60;
+  width:60px;height:60px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px -10px rgba(18,140,66,.65);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.wa-fab:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 18px 38px -12px rgba(18,140,66,.75)}
+.wa-fab svg{width:32px;height:32px;fill:#fff}
+@media (max-width:680px){
+  .wa-fab{right:18px;bottom:18px;width:56px;height:56px}
+}
+
 /* ── Apparition au scroll ────────────────────────────────── */
 .rise{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.22,.61,.36,1),transform 1s cubic-bezier(.22,.61,.36,1)}
 .rise.in{opacity:1;transform:none}
